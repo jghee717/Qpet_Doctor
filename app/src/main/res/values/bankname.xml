@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item> </item>
+        <item>신한은행</item>
+        <item>농협</item>
+        <item>카카오뱅크</item>
+        <item>KB국민은행</item>
+        <item>우리은행</item>
+        <item>KEB하나은행</item>
+        <item>SC제일은행</item>
+        <item>한국씨티은행</item>
+    </string-array>
+</resources>

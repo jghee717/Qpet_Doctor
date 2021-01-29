@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drawal_account.Drawal">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:text="취소"
+        app:layout_constraintEnd_toStartOf="@+id/drawal_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="마일리지 출금"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/drawal_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:text="출금신청"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="411dp"
+        android:layout_height="226dp"
+        android:layout_margin="50dp"
+        android:layout_marginTop="60dp"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="36dp"
+                android:background="#66bb6a"
+                android:text="은행명"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/bank_name"
+                android:layout_height="36dp"
+                android:layout_margin="1dp"
+                android:background="#EDEDED"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="108dp"
+                android:layout_height="36dp"
+                android:background="#66bb6a"
+                android:text="계좌번호"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/bank_number"
+                android:layout_height="36dp"
+                android:layout_margin="1dp"
+                android:background="#EDEDED"
+                android:inputType="number"
+                android:maxLength="20"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="36dp"
+                android:background="#66bb6a"
+                android:text="예금주"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/deposit_name"
+                android:layout_width="92dp"
+                android:layout_height="36dp"
+                android:layout_margin="1dp"
+                android:background="#EDEDED"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="1dp"
+                android:background="#66bb6a"
+                android:text="총 마일리지"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/total_miles"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#EDEDED"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="67dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="1dp"
+                android:background="#66bb6a"
+                android:text="출금할 마일리지"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/drawal_miles"
+                android:layout_width="219dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#EDEDED"
+                android:inputType="number"
+                android:maxLength="9"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="36dp"
+                android:layout_marginBottom="1dp"
+                android:background="#66bb6a"
+                android:text="수수료"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/fee"
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#EDEDED"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="위의 출금 신청 정보가 정확합니까?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="306dp"
+        android:layout_height="91dp"
+        android:text="마일리지 출금 시 수수료 30%가 부과됩니다. [ 단 상담횟수 100회 이상, 그리고 평점이 4점 이상이면 수수료 20%가 부과됩니다]     마일리지는 1만원 이상부터 출금이 가능합니다"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <Button
+        android:id="@+id/account_regit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="계좌 등록"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/accountset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="계좌 수정"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="!!!알아두세요!!!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="66dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/rating"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:clipToPadding="false"
+android:focusableInTouchMode="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/select_mylocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="현위치로 위치 설정"
+        android:textSize="12sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/select_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지도로 위치설정"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="12sp"/>
+
+</LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="12dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageButton
+            android:id="@+id/chat_state_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_state_on"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.277" />
+
+        <TextView
+            android:id="@+id/state_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼을 눌러 상담을 진행해주세요"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chat_state_button"
+            app:layout_constraintVertical_bias="0.427" />
+
+        <Switch
+            android:id="@+id/Activityswitch"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="108dp"
+            android:checked="true"
+            android:scrollbarSize="16dp"
+            android:textSize="24sp"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track_selector"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chat_state_button"
+            app:layout_constraintVertical_bias="0.663" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

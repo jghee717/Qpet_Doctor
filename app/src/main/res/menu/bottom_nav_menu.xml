@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="홈" android:icon="@drawable/ic_home_black_24dp" android:id="@+id/navigation_home"/>
+
+    <item android:title="채팅" android:icon="@drawable/kakao_account_logo" android:id="@+id/navigation_dashboard"/>
+
+    <item android:title="내 정보" android:icon="@drawable/ic_dashboard_black_24dp" android:id="@+id/navigation_notifications"/>
+
+</menu>

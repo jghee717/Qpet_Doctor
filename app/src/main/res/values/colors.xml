@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#66bb6a</color>
+    <color name="colorPrimaryDark">#43a047</color>
+    <color name="colorPrimaryVariant">#81c784</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="scrimBackground">#FFFFFF</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorError">#FFFFFF</color>
+    <color name="colorOnError">#C51162</color>
+
+
+</resources>

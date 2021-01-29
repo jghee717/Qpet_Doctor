@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.ccit19.merdog_doctor.Regit_2Activity" />
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Regit_2Activity">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="회원가입"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <EditText
+                    android:id="@+id/s_doctorId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/id"
+                    android:ems="10"
+                    android:hint="@string/id"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/idAlt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/s_doctorId" />
+
+                <Button
+                    android:id="@+id/id_check"
+                    android:layout_width="99dp"
+                    android:layout_height="57dp"
+                    android:text="@string/overlap_check"
+                    app:layout_constraintBottom_toBottomOf="@+id/s_doctorId"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/s_doctorId"
+                    app:layout_constraintTop_toTopOf="@+id/s_doctorId" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/s_doctorPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+            <TextView
+                android:id="@+id/passAlt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E53A40"
+                app:layout_constraintStart_toStartOf="@+id/s_doctorPass"
+                app:layout_constraintTop_toBottomOf="@+id/s_doctorPass" />
+
+            <EditText
+                android:id="@+id/s_passVeri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/password_conf"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/s_doctorPass"
+                app:layout_constraintStart_toStartOf="@+id/s_doctorPass"
+                app:layout_constraintTop_toBottomOf="@+id/passAlt" />
+
+            <TextView
+                android:id="@+id/passvrifAlt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/s_passVeri"
+                app:layout_constraintTop_toBottomOf="@+id/s_passVeri" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passvrifAlt">
+
+                <EditText
+                    android:id="@+id/s_doctorname"
+                    android:layout_width="310dp"
+                    android:layout_height="49dp"
+                    android:ems="10"
+                    android:hint="이름"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/doctornameAlt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/s_doctorname"
+                    app:layout_constraintTop_toBottomOf="@+id/s_doctorname" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="308dp"
+                android:layout_height="126dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <TextView
+                    android:id="@+id/s_doctorPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:text="010-2222-2222"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/cert_send"
+                    app:layout_constraintEnd_toStartOf="@+id/cert_send"
+                    app:layout_constraintTop_toTopOf="@+id/cert_send" />
+
+                <Button
+                    android:id="@+id/cert_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cert_send"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/cert_num"
+                    android:layout_width="194dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:ems="10"
+                    android:hint="@string/cert_num"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toStartOf="@+id/certnum_check"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/s_doctorPhone" />
+
+                <Button
+                    android:id="@+id/certnum_check"
+                    android:layout_width="95dp"
+                    android:layout_height="45dp"
+                    android:enabled="false"
+                    android:text="@string/check"
+                    app:layout_constraintBottom_toBottomOf="@+id/cert_num"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cert_num"
+                    app:layout_constraintTop_toTopOf="@+id/cert_num" />
+
+                <TextView
+                    android:id="@+id/certnumAlt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/cert_num"
+                    app:layout_constraintTop_toBottomOf="@+id/cert_num" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/fin_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+                <CheckBox
+                    android:id="@+id/Agreed_Check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이용약관"
+                    app:layout_constraintBottom_toBottomOf="@+id/Agreed_Check"
+                    app:layout_constraintStart_toEndOf="@+id/Agreed_Check"
+                    app:layout_constraintTop_toTopOf="@+id/Agreed_Check" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="개인정보 활용동의"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintStart_toEndOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="@+id/textView5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/fin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="161dp"
+                android:layout_marginLeft="161dp"
+                android:layout_marginEnd="161dp"
+                android:layout_marginRight="161dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/check"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="0dp">
+        <TextView
+            android:id="@+id/Records_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="test"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/shapeLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dashboard_black_24dp" />
+            <TextView
+                android:id="@+id/Records_dog"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="개이름"
+                android:gravity="left"/>
+            <TextView
+                android:id="@+id/Records_Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="안녕\n하세요"
+                android:gravity="right"/>
+        </LinearLayout>
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="top"-->
+<!--        android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:id="@+id/Records_Hour"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="분"-->
+<!--            android:gravity="right"/>-->
+<!--    </LinearLayout>-->
+</LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

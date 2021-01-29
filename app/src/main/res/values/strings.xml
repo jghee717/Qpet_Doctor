@@ -1,0 +1,21 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Merdog_client</string>
+    <string name="kakao_app_key">c2def4f927b886df1fa305d681d1d941</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="id">아이디</string>
+    <string name="password">비밀번호</string>
+    <string name="password_conf">비밀번호 확인</string>
+    <string name="nic_name">닉네임</string>
+    <string name="overlap_check">중복확인</string>
+    <string name="sign_in">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="auto_login">자동로그인</string>
+    <string name="cert_send">인증번호 전송</string>
+    <string name="check">확인</string>
+    <string name="cert_num">인증번호</string>
+    <string name="facebook_app_id">2520090531570804</string> <string name="fb_login_protocol_scheme">fb2520090531570804</string>
+    <string name = "twitter_consumer_key"> hEDxEn1uegJTPTGvyy3fhi5fX</string>
+    <string name = "twitter_consumer_secret"> mxkTadQPBFpmzyfKUqPzTEzSxbY5W6FnsxONjI52SDmrx3dfAa</string>
+</resources>

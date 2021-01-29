@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoModify">
+
+    <EditText
+        android:id="@+id/s_doctorPassVeri"
+        android:layout_width="194dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="55dp"
+        android:ems="10"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView27"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        android:text="아이디 :"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        android:text="이름 :"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="36dp"
+        android:text="변경할 비밀번호 :"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/s_doctorPass"
+        android:layout_width="196dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:hint="비밀번호를 입력해주세요"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <Button
+        android:id="@+id/button_Modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="전화번호 수정"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certnumcheck" />
+
+    <TextView
+        android:id="@+id/Passcheck"
+        android:layout_width="197dp"
+        android:layout_height="16dp"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/s_doctorPass"
+        app:layout_constraintTop_toBottomOf="@+id/s_doctorPass" />
+
+    <TextView
+        android:id="@+id/PassVericheck"
+        android:layout_width="176dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="1dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/s_doctorPassVeri"
+        app:layout_constraintTop_toBottomOf="@+id/s_doctorPassVeri" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="비밀번호확인 :"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:text="전화번호변경"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/doctorphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="56dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="136dp"
+        android:text="전화번호 :"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <Button
+        android:id="@+id/numbercheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="중복확인"
+        app:layout_constraintBottom_toTopOf="@+id/phonecheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/s_doctorPhoneModify"
+        app:layout_constraintTop_toTopOf="@+id/s_doctorPhoneModify"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <Button
+        android:id="@+id/cert_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="인증번호전송"
+        app:layout_constraintBottom_toTopOf="@+id/phonecheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/s_doctorPhoneModify"
+        app:layout_constraintTop_toTopOf="@+id/s_doctorPhoneModify" />
+
+    <Button
+        android:id="@+id/certnum_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="확인"
+        app:layout_constraintBottom_toTopOf="@+id/certnumcheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/certnumcheck"
+        app:layout_constraintTop_toBottomOf="@+id/phonecheck"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/certNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="인증번호를 입력해주세요"
+        android:inputType="number"
+        android:maxLength="6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_doctorPhoneModify" />
+
+    <TextView
+        android:id="@+id/phonecheck"
+        android:layout_width="217dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="1dp"
+        android:text="."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/certNum"
+        app:layout_constraintStart_toStartOf="@+id/s_doctorPhoneModify"
+        app:layout_constraintTop_toBottomOf="@+id/s_doctorPhoneModify"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/certnumcheck"
+        android:layout_width="215dp"
+        android:layout_height="16dp"
+        android:text="."
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/certNum"
+        app:layout_constraintTop_toBottomOf="@+id/certNum" />
+
+    <EditText
+        android:id="@+id/s_doctorPhoneModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="전화번호를 입력해주세요"
+        android:inputType="phone"
+        android:maxLength="12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="357dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="@drawable/customborder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="350dp"
+        android:layout_height="311dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customborder"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2"></FrameLayout>
+
+    <Button
+        android:id="@+id/passmodify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="비밀번호 수정"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PassVericheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
